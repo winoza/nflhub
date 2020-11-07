@@ -37,31 +37,6 @@ aside {
     margin-left: 2%;
     text-align: center;
 }
-.navbar {
-    background-color: gold;
-    min-height: 3.25rem;
-    position: relative;
-    z-index: 30;
-}
-.navbar, .navbar-brand, .navbar-end, .navbar-menu, .navbar-start {
-    align-items: stretch;
-    display: flex;
-    background-color: lightslategrey;
-}
-.clearfix * {
-    border-radius: 10px;
-}
-.clearfix {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 0px;
-    margin-right: 0px;
-}
-.clearfix::after {
-    content: "";
-    display: block;
-    clear: both;
-}
 .container{
     text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -77,6 +52,7 @@ aside {
 
 .hero-body{
    background-color: rgb(74, 106, 202);
+   position: absolute;
 }
 
 .image{
@@ -85,4 +61,19 @@ aside {
     border-radius: 4px;
     padding: 5px;
     height: auto;
+}
+
+.clearfix * {
+    border-radius: 10px;
+}
+.clearfix {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
 }
