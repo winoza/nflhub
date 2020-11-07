@@ -1,5 +1,64 @@
+* {
+    box-sizing: border-box;
+}
 body {
-    font-size: 20 px;
-    font-weight: normal;
-    color: red
+    margin: 0px;
+    padding: 10px;
+}
+header {
+    padding: 20px;
+    margin-left: -10px;
+    margin-right: -10px;
+    background: silver;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+footer {
+    padding: 20px;
+    margin-left: -10px;
+    margin-right: -10px;
+    background: silver;
+    font-size: 12px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+section {
+    width: 35%;
+    height: 600px;
+    float: left;
+    background: papayawhip;
+    text-align: center;
+}
+aside {
+    width: 60%;
+    float: left;
+    height: 600px;
+    background: lightgoldenrodyellow;
+    margin-left: 2%;
+    text-align: center;
+}
+.navbar {
+    background-color: gold;
+    min-height: 3.25rem;
+    position: relative;
+    z-index: 30;
+}
+.navbar, .navbar-brand, .navbar-end, .navbar-menu, .navbar-start {
+    align-items: stretch;
+    display: flex;
+    background-color: lightslategrey;
+}
+.clearfix * {
+    border-radius: 10px;
+}
+.clearfix {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
 }
