@@ -1,79 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-}
-body {
-    margin: 0px;
-    padding: 10px;
-}
-header {
-    padding: 20px;
-    margin-left: -10px;
-    margin-right: -10px;
-    background: silver;
-    font-family: 'Times New Roman', Times, serif;
-    text-align: center;
-}
-footer {
-    padding: 20px;
-    margin-left: -10px;
-    margin-right: -10px;
-    background: silver;
-    font-size: 12px;
-    font-family: 'Times New Roman', Times, serif;
-    text-align: center;
-}
-section {
-    width: 35%;
-    height: 600px;
-    float: left;
-    background: papayawhip;
-    text-align: center;
-}
-aside {
-    width: 60%;
-    float: left;
-    height: 600px;
-    background: lightgoldenrodyellow;
-    margin-left: 2%;
-    text-align: center;
-}
-.container{
-    text-align: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
-.title{
-    text-shadow: 1px 1px 2px gray;
+li, a, button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: white
 }
 
-.subtitle{
-    text-shadow: 1px 1px 2px gray;
+
+.container {
+    display: grid;
+    grid-template-columns: 5% 45% 45% 5%;
+    grid-template-rows: 5vw 40vw 5vw;
+    grid-gap: 1em;
 }
 
-.hero-body{
-   background-color: rgb(74, 106, 202);
-   position: absolute;
+.container > div {
+    justify-content: center;
+    align-items: center;
 }
 
-.image{
-    width: 100px;
-    border: 1px solid rgb(79, 84, 100);
-    border-radius: 4px;
-    padding: 5px;
-    height: auto;
+html, body {
+  margin: 0 auto;
 }
 
-.clearfix * {
-    border-radius: 10px;
+
+
+
+.schedule {
+
+  background-color: lightgray;
 }
-.clearfix {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 0px;
-    margin-right: 0px;
+
+.news {
+      background-color: lightgray;
 }
-.clearfix::after {
-    content: "";
-    display: block;
-    clear: both;
+
+
+
+
+.header, .footer {
+    grid-column: 1 / span 4;
 }
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+    background-color:#002a56;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#002a56;
+    font-size: 16px;
+    color: white;
+}
+
+/*header CSS*/
+.logo {
+    cursor: pointer;
+    margin-right: auto;
+    font-size: 30px;
+}
+
+.navlinks {
+    list-style: none;
+}
+
+.navlinks li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.navlinks li a {
+    transition: all 0.3s ease 0s;
+}
+.navlinks li a:hover {
+    color: #0088a9
+}
+
+button {
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+}
+
+/*table CSS*/
+.content-table {
+    border-collapse: collapse;
+    margin: 1em;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    width: 95%;
+  }
+  
+  .content-table thead tr {
+    background-color: #002a56;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+  }
+  
+  .content-table th,
+  .content-table td {
+    padding: 12px 15px;
+  }
+  
+  .content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+  }
+  
+  .content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+  
+  .content-table tbody tr:last-of-type {
+    border-bottom: 1px solid black;
+  }
+  
+  .content-table tbody tr.active-row {
+    font-weight: bold;
+    color: blue;
+  }
+  
+
